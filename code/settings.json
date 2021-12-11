@@ -1,0 +1,10 @@
+/*
+	Settings file used by Visual Studio Code
+
+	https://code.visualstudio.com
+*/
+
+{
+	// Use unix-style line endings on all platforms
+	"files.eol": "\n"
+}
