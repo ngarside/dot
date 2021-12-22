@@ -1,13 +1,19 @@
 /*
 	Settings file used by Visual Studio Code
-
 	https://code.visualstudio.com
 */
 
 {
+	// Automatically close the console when the debug session ends
+	"debug.console.closeOnEnd": true,
+
 	// Use JetBrains Mono font
 	// https://www.jetbrains.com/lp/mono
 	"editor.fontFamily": "JetBrains Mono, monospace",
+
+	// Adjust font size to better match JetBrains IDEs
+	"editor.fontSize": 12,
+	"editor.lineHeight": 1.5,
 
 	// Disable the Open Editors pane
 	"explorer.openEditors.visible": 0,
