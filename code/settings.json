@@ -9,6 +9,9 @@
 	// https://www.jetbrains.com/lp/mono
 	"editor.fontFamily": "JetBrains Mono, monospace",
 
+	// Automatically save files after a 1s delay
+	"files.autoSave": "afterDelay",
+
 	// Use unix-style line endings on all platforms
 	"files.eol": "\n"
 }
