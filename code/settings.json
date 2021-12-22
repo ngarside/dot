@@ -5,6 +5,10 @@
 */
 
 {
+	// Use JetBrains Mono font
+	// https://www.jetbrains.com/lp/mono
+	"editor.fontFamily": "JetBrains Mono, monospace",
+
 	// Use unix-style line endings on all platforms
 	"files.eol": "\n"
 }
