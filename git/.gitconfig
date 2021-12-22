@@ -1,0 +1,7 @@
+# Settings file used by Git
+# https://git-scm.com/docs/git-config
+
+[init]
+
+# Set the default branch name for newly created repositories to 'master'
+defaultBranch = master
