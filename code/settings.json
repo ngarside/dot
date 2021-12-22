@@ -37,5 +37,9 @@
 	// https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme
 	"workbench.colorTheme": "GitHub Light",
 	"workbench.preferredDarkColorTheme": "GitHub Dark",
-	"workbench.preferredLightColorTheme": "GitHub Light"
+	"workbench.preferredLightColorTheme": "GitHub Light",
+
+	// Disable preview editors
+	"workbench.editor.enablePreview": false,
+	"workbench.editor.enablePreviewFromQuickOpen": false,
 }
