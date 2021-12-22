@@ -19,5 +19,14 @@
 	"files.eol": "\n",
 
 	// Automatically fetch commits from all git remotes every 3m
-	"git.autofetch": "all"
+	"git.autofetch": "all",
+
+	// Automatically switch between light and dark themes based on the operating system's appearance setting
+	"window.autoDetectColorScheme": true,
+
+	// Use GitHub's theme
+	// https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme
+	"workbench.colorTheme": "GitHub Light",
+	"workbench.preferredDarkColorTheme": "GitHub Dark",
+	"workbench.preferredLightColorTheme": "GitHub Light"
 }
