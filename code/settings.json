@@ -13,5 +13,8 @@
 	"files.autoSave": "afterDelay",
 
 	// Use unix-style line endings on all platforms
-	"files.eol": "\n"
+	"files.eol": "\n",
+
+	// Automatically fetch commits from all git remotes every 3m
+	"git.autofetch": "all"
 }
