@@ -27,4 +27,5 @@ noremap h <Nop>
 " <shift>+l : end of document
 " <shift>+; : end of line
 
-noremap <shift>; $
+noremap J 0
+noremap : $
