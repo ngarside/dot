@@ -36,5 +36,8 @@ noremap : $
 
 " Holding <ctrl> while pressing a movement key will move the screen up/down
 
+" <ctrl>+k : move up one line
+" <ctrl>+l : move down one line
+
 nnoremap <C-k> <C-y>
 nnoremap <C-l> <C-e>
