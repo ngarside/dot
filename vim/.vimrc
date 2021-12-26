@@ -34,8 +34,7 @@ noremap : $
 
 " Remap screen movement keys """""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Holding the <ctrl> key while pressing a movement key will move the screen
-" up/down
+" Holding <ctrl> while pressing a movement key will move the screen up/down
 
 nnoremap <C-k> <C-y>
 nnoremap <C-l> <C-e>
