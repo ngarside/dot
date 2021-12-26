@@ -28,4 +28,14 @@ noremap h <Nop>
 " <shift>+; : end of line
 
 noremap J 0
+noremap K gg
+noremap L G
 noremap : $
+
+" Remap screen movement keys """""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Holding the <ctrl> key while pressing a movement key will move the screen
+" up/down
+
+nnoremap <C-k> <C-y>
+nnoremap <C-l> <C-e>
