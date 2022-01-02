@@ -5,3 +5,9 @@
 
 # Set the default branch name for newly created repositories to 'master'
 defaultBranch = master
+
+[user]
+
+# Set the default author and committer details
+email = code@nathangarside.com
+name = Nathan Garside
