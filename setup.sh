@@ -24,7 +24,7 @@ flatpak --noninteractive install \
 	com.valvesoftware.Steam \
 	com.spotify.Client \
 	io.github.shiftey.Desktop \
-	org.kde.kcalc \
+	org.kde.kalk \
 	rest.insomnia.Insomnia \
 	org.kde.kclock
 
