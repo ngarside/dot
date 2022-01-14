@@ -37,7 +37,8 @@ zypper install code \
 	npm16 \
 	papirus-icon-theme \
 	podman-docker \
-	sddm
+	sddm \
+	terraform
 
 # --------------------------------------------------------------------------------------------------
 
