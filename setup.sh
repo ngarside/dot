@@ -27,6 +27,7 @@ zypper install --type pattern container_runtime kde_plasma
 
 zypper install code \
 	azure-cli \
+	clamav \
 	dolphin \
 	dotnet-sdk-3.1 \
 	dotnet-sdk-5.0 \
