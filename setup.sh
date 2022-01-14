@@ -9,9 +9,34 @@ fi
 
 # --------------------------------------------------------------------------------------------------
 
+rpm --import https://packages.microsoft.com/keys/microsoft.asc
+
+rpm --import https://download.nvidia.com/opensuse/tumbleweed/repodata/repomd.xml.key
+
+zypper addrepo --refresh --name Azure https://packages.microsoft.com/yumrepos/azure-cli repo-azure
+
+zypper addrepo --refresh --name Dotnet https://packages.microsoft.com/opensuse/15/prod repo-dotnet
+
+zypper addrepo --refresh --name "VS Code" https://packages.microsoft.com/yumrepos/vscode repo-vscode
+
+zypper addrepo --refresh --name NVIDIA https://download.nvidia.com/opensuse/tumbleweed repo-nvidia
+
+# --------------------------------------------------------------------------------------------------
+
 zypper install --type pattern container_runtime kde_plasma
 
-zypper install flatpak konsole npm16 sddm
+zypper install code \
+	azure-cli \
+	dolphin \
+	dotnet-sdk-3.1 \
+	dotnet-sdk-5.0 \
+	dotnet-sdk-6.0 \
+	flatpak \
+	konsole \
+	npm16 \
+	papirus-icon-theme \
+	podman-docker \
+	sddm
 
 # --------------------------------------------------------------------------------------------------
 
