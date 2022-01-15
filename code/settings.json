@@ -10,6 +10,9 @@
 	// Don't merge folders in the explorer
 	"explorer.compactFolders": false,
 
+	// Disable code folding
+	"editor.folding": false,
+
 	// Use JetBrains Mono font
 	// https://www.jetbrains.com/lp/mono
 	"editor.fontFamily": "JetBrains Mono, monospace",
