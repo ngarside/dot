@@ -43,6 +43,7 @@ zypper --non-interactive install --auto-agree-with-licenses \
 	dotnet-sdk-6.0 \
 	flatpak \
 	git \
+	kcm_sddm \
 	konsole \
 	latte-dock \
 	npm16 \
@@ -80,24 +81,45 @@ systemctl set-default graphical.target
 
 # Generate SSH key ---------------------------------------------------------------------------------
 
-# TODO should run as user
-
-if [ ! -f ~/.ssh/id_rsa ]; then
-	ssh-keygen -t rsa -b 4096 -C code@nathangarside.com -f ~/.ssh/id_rsa -N ""
-fi
+sudo --login --user nathan bash << EOF
+	if [ ! -f ~/.ssh/id_rsa ]; then
+		ssh-keygen -t rsa -b 4096 -C code@nathangarside.com -f ~/.ssh/id_rsa -N ""
+	fi
+EOF
 
 # Delete unwanted default files --------------------------------------------------------------------
 
-# TODO should run as user
-
-gio trash ~/bin
-gio trash ~/Desktop/*.desktop
-gio trash ~/Public
+sudo --login --user nathan bash << EOF
+	gio trash ~/bin
+	gio trash ~/Desktop/*.desktop
+	gio trash ~/Public
+EOF
 
 # Install VS Code extensions -----------------------------------------------------------------------
 
-# TODO should run as user
+sudo --login --user nathan bash << EOF
+	code --install-extension editorconfig.editorconfig
+	code --install-extension github.github-vscode-theme
+	code --install-extension PKief.material-icon-theme
+EOF
 
-code --install-extension editorconfig.editorconfig
-code --install-extension github.github-vscode-theme
-code --install-extension PKief.material-icon-theme
+# Clone this repository ----------------------------------------------------------------------------
+
+sudo --login --user nathan bash << EOF
+	rm --force --recursive ~/.cache/dot
+	git clone --depth 1 https://github.com/ngarside/dot ~/.cache/dot
+	code --install-extension editorconfig.editorconfig
+	code --install-extension github.github-vscode-theme
+	code --install-extension PKief.material-icon-theme
+EOF
+
+# Copy dotfiles ------------------------------------------------------------------------------------
+
+sudo --login --user nathan bash << EOF
+	cp --recursive ~/.cache/dot/code/. ~/.config/Code/User
+	cp --recursive ~/.cache/dot/git/. ~
+	cp --recursive ~/.cache/dot/home/. ~
+	cp --recursive ~/.cache/dot/ssh/. ~/.ssh
+	cp --recursive ~/.cache/dot/vim/. ~
+	cp --recursive ~/.cache/dot/wallpapers/. ~/.local/share/wallpapers
+EOF
