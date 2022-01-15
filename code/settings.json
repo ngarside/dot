@@ -71,5 +71,8 @@
 	"workbench.editor.enablePreviewFromQuickOpen": false,
 
 	// Disable the welcome screen
-	"workbench.startupEditor": "none"
+	"workbench.startupEditor": "none",
+
+	// Increase tree indent in the explorer
+	"workbench.tree.indent": 20
 }
