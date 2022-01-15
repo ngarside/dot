@@ -14,13 +14,23 @@ if [ command -v tukit &> /dev/null ]; then
 	alias transaction="sudo tukit --continue execute bash"
 fi
 
-# Update the system and applications
+# Clean temporary files
 
 OS=$(grep --only-matching --perl-regexp "(?<=^ID=\").*?(?=\"$)" /etc/os-release)
 if [ "$OS" -eq "opensuse-tumbleweed" ]; then
-	sudo bash << EOF
+	alias clean="sudo bash << EOF
+		journalctl --vacuum-time=1d --quiet
+		zypper --non-interactive clean --all
+		zypper --non-interactive purge-kernels
+	EOF"
+fi
+
+# Update the system and applications
+
+if [ "$OS" -eq "opensuse-tumbleweed" ]; then
+	alias update="sudo bash << EOF
 		flatpak update
 		zypper --non-interactive refresh
 		zypper --non-interactive dist-upgrade --auto-agree-with-licenses
-	EOF
+	EOF"
 fi
