@@ -50,6 +50,7 @@ zypper --non-interactive install --auto-agree-with-licenses \
 	npm16 \
 	papirus-icon-theme \
 	podman-docker \
+	powertop \
 	sddm \
 	sof-firmware \
 	suse-prime \
