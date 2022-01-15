@@ -42,6 +42,9 @@
 	// Don't confirm when syncing repositories
 	"git.confirmSync": false,
 
+	// Commit all unstaged changes when there are no staged changes
+	"git.enableSmartCommit": true,
+
 	// Disable trusted windows
 	"security.workbench.trust.enabled": false,
 
