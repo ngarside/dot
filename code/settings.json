@@ -48,6 +48,9 @@
 	// Disable trusted windows
 	"security.workbench.trust.enabled": false,
 
+	// Disable telemetry
+	"telemetry.telemetryLevel": "off",
+
 	// Disable JavaScript and TypeScript survey prompts
 	"typescript.surveys.enabled": false,
 
