@@ -17,6 +17,9 @@
 	// https://www.jetbrains.com/lp/mono
 	"editor.fontFamily": "JetBrains Mono, monospace",
 
+	// Enable ligatures in supported fonts
+	"editor.fontLigatures": true,
+
 	// Adjust font size to better match JetBrains IDEs
 	"editor.fontSize": 12,
 	"editor.lineHeight": 1.5,
