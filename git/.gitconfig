@@ -1,6 +1,16 @@
 # Settings file used by Git
 # https://git-scm.com/docs/git-config
 
+[filter "lfs"]
+
+# Alias commands to use LFS
+clean = git-lfs clean -- %f
+process = git-lfs filter-process
+smudge = git-lfs smudge -- %f
+
+# Fail early if a filter fails
+required = true
+
 [init]
 
 # Set the default branch name for newly created repositories to 'master'
