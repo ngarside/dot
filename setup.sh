@@ -15,6 +15,8 @@ fi
 
 # Setup repositories -------------------------------------------------------------------------------
 
+zypper --non-interactive removerepo --local
+
 rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
 rpm --import https://download.nvidia.com/opensuse/tumbleweed/repodata/repomd.xml.key
