@@ -1,0 +1,10 @@
+# Configuration file for Kwin
+# https://userbase.kde.org/KWin
+
+[org.kde.kdecoration2]
+
+# Don't show any buttons on the left of window titlebars
+ButtonsOnLeft =
+
+# Show the minimise, maximise and close buttons on the right of window titlebars
+ButtonsOnRight = IAX
