@@ -51,6 +51,9 @@
 	// Disable telemetry
 	"telemetry.telemetryLevel": "off",
 
+	// Use an I-beam style cursor in the terminal
+	"terminal.integrated.cursorStyle": "line",
+
 	// Disable JavaScript and TypeScript survey prompts
 	"typescript.surveys.enabled": false,
 
