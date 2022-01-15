@@ -1,0 +1,10 @@
+# Configuration file for Krunner
+# https://userbase.kde.org/Plasma/Krunner
+
+[General]
+
+# Place popup towards the center of the current screen
+FreeFloating = true
+
+# Clear prior search query on start
+RetainPriorSearch = false
