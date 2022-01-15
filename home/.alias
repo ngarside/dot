@@ -13,3 +13,14 @@ EDITOR=nano
 if [ command -v tukit &> /dev/null ]; then
 	alias transaction="sudo tukit --continue execute bash"
 fi
+
+# Update the system and applications
+
+OS=$(grep --only-matching --perl-regexp "(?<=^ID=\").*?(?=\"$)" /etc/os-release)
+if [ "$OS" -eq "opensuse-tumbleweed" ]; then
+	sudo bash << EOF
+		flatpak update
+		zypper --non-interactive refresh
+		zypper --non-interactive dist-upgrade --auto-agree-with-licenses
+	EOF
+fi
