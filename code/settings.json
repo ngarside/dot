@@ -39,6 +39,9 @@
 	// Automatically fetch commits from all git remotes every 3m
 	"git.autofetch": "all",
 
+	// Don't confirm when syncing repositories
+	"git.confirmSync": false,
+
 	// Disable trusted windows
 	"security.workbench.trust.enabled": false,
 
