@@ -42,6 +42,7 @@ zypper --non-interactive install --auto-agree-with-licenses \
 	dotnet-sdk-5.0 \
 	dotnet-sdk-6.0 \
 	flatpak \
+	git \
 	konsole \
 	latte-dock \
 	npm16 \
