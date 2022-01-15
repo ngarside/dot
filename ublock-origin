@@ -1,0 +1,11 @@
+! Custom filters for uBlock Origin
+! https://github.com/gorhill/uBlock
+
+! Removes the GDPR cookie banner. Doing this through the site itself doesn't seem to stick with third-party cookies disabled
+stackexchange.com###js-gdpr-consent-banner
+
+! Removes the large 'hero' banner. Doing this through the site itself doesn't seem to stick with third-party cookies disabled
+stackexchange.com##.js-dismissable-hero
+
+! Completely disables video annotations on YouTube
+||youtube.com/annotations_
