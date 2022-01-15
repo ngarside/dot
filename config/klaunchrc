@@ -1,0 +1,6 @@
+# Config file for launching files in KDE Plasma
+
+[FeedbackStyle]
+
+# Don't show a bouncing icon when launching an application
+BusyCursor = false
