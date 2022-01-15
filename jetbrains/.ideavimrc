@@ -1,5 +1,0 @@
-# Settings file for IdeaVim
-# https://plugins.jetbrains.com/plugin/164-ideavim
-
-# Include settings from Vim
-source ~/.vimrc
