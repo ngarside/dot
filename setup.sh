@@ -72,6 +72,7 @@ flatpak --noninteractive install \
 	org.gimp.GIMP \
 	org.chromium.Chromium \
 	com.microsoft.Teams \
+	org.gnome.Cheese \
 	org.freedesktop.Platform.GL.nvidia-470-74 \
 	org.freedesktop.Platform.GL32.nvidia-470-74
 
