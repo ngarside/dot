@@ -30,6 +30,9 @@
 	// Automatically fetch commits from all git remotes every 3m
 	"git.autofetch": "all",
 
+	// Disable trusted windows
+	"security.workbench.trust.enabled": false,
+
 	// Automatically switch between light and dark themes based on the operating system's appearance setting
 	"window.autoDetectColorScheme": true,
 
@@ -42,4 +45,7 @@
 	// Disable preview editors
 	"workbench.editor.enablePreview": false,
 	"workbench.editor.enablePreviewFromQuickOpen": false,
+
+	// Disable the welcome screen
+	"workbench.startupEditor": "none"
 }
