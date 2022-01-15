@@ -99,6 +99,7 @@ sudo --login --user nathan bash << EOF
 	gio trash ~/bin
 	gio trash ~/Desktop/*.desktop
 	gio trash ~/Public
+	gio trash ~/Templates
 EOF
 
 # Install VS Code extensions -----------------------------------------------------------------------
