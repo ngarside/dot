@@ -7,3 +7,9 @@ DOTNET_CLI_TELEMETRY_OPTOUT=true
 # https://superuser.com/questions/864974/set-nano-as-a-default-editor-over-vim
 
 EDITOR=nano
+
+# Enter a transactional shell
+
+if [ command -v tukit &> /dev/null ]; then
+	alias transaction="sudo tukit --continue execute bash"
+fi
