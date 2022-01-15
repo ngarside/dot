@@ -1,0 +1,17 @@
+# Custom rules for Kwin
+# https://userbase.kde.org/KWin_Rules
+
+# Set the minimum size for all windows to 256*384 pixels
+# This is useful when tiling windows in narrow columns
+
+[a82aed6f-5188-4bae-ac0b-1308e938c79e]
+Description = Disable Minimum Window Size
+minsize=256,384
+minsizerule=2
+types=289
+
+# Enable the above rules
+
+[General]
+count = 1
+rules = a82aed6f-5188-4bae-ac0b-1308e938c79e
