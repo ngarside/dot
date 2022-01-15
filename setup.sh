@@ -75,6 +75,7 @@ flatpak --noninteractive install \
 	com.microsoft.Teams \
 	org.gnome.Cheese \
 	io.github.sharkwouter.Minigalaxy \
+	org.mozilla.Thunderbird \
 	org.freedesktop.Platform.GL.nvidia-470-74 \
 	org.freedesktop.Platform.GL32.nvidia-470-74
 
