@@ -7,6 +7,9 @@
 	// Automatically close the console when the debug session ends
 	"debug.console.closeOnEnd": true,
 
+	// Don't merge folders in the explorer
+	"explorer.compactFolders": false,
+
 	// Use JetBrains Mono font
 	// https://www.jetbrains.com/lp/mono
 	"editor.fontFamily": "JetBrains Mono, monospace",
