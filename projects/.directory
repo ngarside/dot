@@ -1,0 +1,6 @@
+# Set the icon shown in dolphin for the Projects directory
+# Works with the Papirus icon pack
+
+[Desktop Entry]
+Icon = folder-projects
+Type = Directory
