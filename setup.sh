@@ -122,6 +122,7 @@ EOF
 
 sudo --login --user nathan bash << EOF
 	cp --recursive ~/.cache/dot/code/. ~/.config/Code/User
+	cp --recursive ~/.cache/dot/config/. ~/.config
 	cp --recursive ~/.cache/dot/git/. ~
 	cp --recursive ~/.cache/dot/home/. ~
 	cp --recursive ~/.cache/dot/ssh/. ~/.ssh
