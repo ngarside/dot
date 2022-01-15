@@ -43,6 +43,7 @@ zypper --non-interactive install --auto-agree-with-licenses \
 	dotnet-sdk-6.0 \
 	flatpak \
 	git \
+	ImageMagick \
 	kcm_sddm \
 	konsole \
 	latte-dock \
