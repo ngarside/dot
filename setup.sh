@@ -51,11 +51,14 @@ zypper --non-interactive install --auto-agree-with-licenses \
 	latte-dock \
 	npm16 \
 	papirus-icon-theme \
+	plasma5-systemmonitor \
 	podman-docker \
 	powertop \
 	sddm \
 	sof-firmware \
 	suse-prime \
+	tar \
+	thermald \
 	terraform \
 	x11-video-nvidiaG05
 
@@ -79,6 +82,7 @@ flatpak --noninteractive install \
 	org.gnome.Cheese \
 	io.github.sharkwouter.Minigalaxy \
 	org.mozilla.Thunderbird \
+	com.interversehq.qView \
 	org.freedesktop.Platform.GL.nvidia-470-74 \
 	org.freedesktop.Platform.GL32.nvidia-470-74
 
@@ -134,3 +138,31 @@ sudo --login --user nathan bash << EOF
 	cp --recursive ~/.cache/dot/vim/. ~
 	cp --recursive ~/.cache/dot/wallpapers/. ~/.local/share/wallpapers
 EOF
+
+# Disable SSH server -------------------------------------------------------------------------------
+
+systemctl stop sshd
+systemctl disable sshd
+
+# Enable firewall ----------------------------------------------------------------------------------
+
+systemctl enable firewalld
+systemctl start firewalld
+
+# Install JetBrains toolbox ------------------------------------------------------------------------
+
+TOOLBOX_PATH="/tmp/jetbrains-toolbox.tar.gz"
+
+wget --output-document $TOOLBOX_PATH \
+	https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.22.10970.tar.gz
+
+TOOLBOX_SHA=$(sha256sum $TOOLBOX_PATH)
+
+if [ "$TOOLBOX_SHA" -ne "3b2cfc340d9116699d9e83173ea79d325df7f940d6f446d34076833608a99139" ]; then
+	echo "JetBrains toolbox checksum did not match"
+	rm --force $TOOLBOX_PATH
+	exit
+fi
+
+tar --file $TOOLBOX_PATH --directory /opt --strip-components 1 --extract --gzip
+rm $TOOLBOX_PATH
