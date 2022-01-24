@@ -1,0 +1,7 @@
+# Config file for Konsole
+# https://konsole.kde.org
+
+[TabBar]
+
+# Show tabs on top
+TabBarPosition = Top
