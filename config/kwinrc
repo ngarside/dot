@@ -8,3 +8,8 @@ ButtonsOnLeft =
 
 # Show the minimise, maximise and close buttons on the right of window titlebars
 ButtonsOnRight = IAX
+
+[Windows]
+
+# Always open windows in the center of the screen
+Placement = Centered
