@@ -1,0 +1,7 @@
+# Configuration for KScreenLocker
+# https://invent.kde.org/plasma/kscreenlocker
+
+[Greeter][Wallpaper][org.kde.image][General]
+
+# Show the desktop wallpaper on the lock screen
+Image = /home/nathan/.local/share/wallpapers/boy-of-water.jpg
