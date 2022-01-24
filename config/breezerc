@@ -1,0 +1,8 @@
+# Config file for Plasma's Breeze theme
+# https://invent.kde.org/plasma/breeze
+
+[Common]
+
+# Reduce the size and strength of drop shadows surrounding windows
+ShadowSize = ShadowSmall
+ShadowStrength = 128
