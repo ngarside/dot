@@ -36,6 +36,7 @@ zypper --non-interactive install --type pattern container_runtime kde_plasma
 zypper --non-interactive install --auto-agree-with-licenses \
 	alsa \
 	ansible \
+	bbswitch \
 	code \
 	azure-cli \
 	clamav \
@@ -50,6 +51,7 @@ zypper --non-interactive install --auto-agree-with-licenses \
 	konsole \
 	latte-dock \
 	npm16 \
+	osc \
 	papirus-icon-theme \
 	plasma5-systemmonitor \
 	podman-docker \
@@ -134,6 +136,7 @@ sudo --login --user nathan bash << EOF
 	cp --recursive ~/.cache/dot/config/. ~/.config
 	cp --recursive ~/.cache/dot/git/. ~
 	cp --recursive ~/.cache/dot/home/. ~
+	cp --recursive ~/.cache/dot/projects/. ~/Projects
 	cp --recursive ~/.cache/dot/ssh/. ~/.ssh
 	cp --recursive ~/.cache/dot/vim/. ~
 	cp --recursive ~/.cache/dot/wallpapers/. ~/.local/share/wallpapers
@@ -166,3 +169,12 @@ fi
 
 tar --file $TOOLBOX_PATH --directory /opt --strip-components 1 --extract --gzip
 rm $TOOLBOX_PATH
+
+# Disable the Nvidia GPU ---------------------------------------------------------------------------
+
+prime-select intel
+prime-select boot intel
+
+# Finally reboot the system ------------------------------------------------------------------------
+
+reboot
