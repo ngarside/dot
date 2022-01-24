@@ -1,0 +1,27 @@
+# Configuration for Dolphin
+# https://apps.kde.org/dolphin
+
+[DetailsMode]
+
+# Don't allow expanding folders inline in the details view
+ExpandableFolders = false
+
+# Reduce height of rows in the details view
+PreviewSize = 32
+
+[General]
+
+# Don't confirm when closing a window with multiple open tabs
+ConfirmClosingMultipleTabs = false
+
+# Always open new tabs after the last tab
+OpenNewTabAfterLastTab = true
+
+# Don't restore previous tabs when opening a new window
+RememberOpenedTabs = false
+
+# Disable selection toggle (it's useless when using double click mode)
+ShowSelectionToggle = false
+
+# Hide the status bar
+ShowStatusBar = false
