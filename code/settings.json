@@ -21,8 +21,15 @@
 	"editor.fontLigatures": true,
 
 	// Adjust font size to better match JetBrains IDEs
-	"editor.fontSize": 12,
-	"editor.lineHeight": 1.5,
+	"editor.fontSize": 12.5,
+	"editor.fontWeight": "300",
+	"editor.lineHeight": 1.6,
+
+	// Don't insert spaces when pressing tab
+	"editor.insertSpaces": false,
+
+	// Show the line hightlight in the gutter
+	"editor.renderLineHighlight": "all",
 
 	// Wrap lines at the viewport width
 	"editor.wordWrap": "on",
@@ -33,8 +40,18 @@
 	// Disable extension recommendations
 	"extensions.ignoreRecommendations": true,
 
+	"files.associations": {
+
+		// Treat 'meta' files as if they were 'json'
+		"*.meta": "json"
+
+	},
+
 	// Automatically save files after a 1s delay
 	"files.autoSave": "afterDelay",
+
+	// When opening new tabs, default to the language of the previously open tab
+	"files.defaultLanguage": "${activeEditorLanguage}",
 
 	// Use unix-style line endings on all platforms
 	"files.eol": "\n",
@@ -63,6 +80,9 @@
 	// Automatically switch between light and dark themes based on the operating system's appearance setting
 	"window.autoDetectColorScheme": true,
 
+	// Don't restore windows on cold start
+	"window.restoreWindows": "none",
+
 	// Use GitHub's theme
 	// https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme
 	"workbench.colorTheme": "GitHub Light",
@@ -73,9 +93,16 @@
 	"workbench.editor.enablePreview": false,
 	"workbench.editor.enablePreviewFromQuickOpen": false,
 
+	// Use the material icon theme
+	// https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme
+	"workbench.iconTheme": "material-icon-theme",
+
 	// Disable the welcome screen
 	"workbench.startupEditor": "none",
 
 	// Increase tree indent in the explorer
-	"workbench.tree.indent": 20
+	"workbench.tree.indent": 20,
+
+	// Disable update checks (leave it to the package manager)
+	"update.mode": "none"
 }
