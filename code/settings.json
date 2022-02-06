@@ -43,7 +43,10 @@
 	"files.associations": {
 
 		// Treat 'meta' files as if they were 'json'
-		"*.meta": "json"
+		"*.meta": "json",
+
+		// Treat 'restext' files as if they were 'ini'
+		"*.restext": "ini"
 
 	},
 
