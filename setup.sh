@@ -36,11 +36,12 @@ zypper --non-interactive install --type pattern container_runtime kde_plasma
 zypper --non-interactive install --auto-agree-with-licenses \
 	alsa \
 	ansible \
+	azure-cli \
 	bbswitch \
 	code \
-	azure-cli \
 	clamav \
 	dolphin \
+	dos2unix \
 	dotnet-sdk-3.1 \
 	dotnet-sdk-5.0 \
 	dotnet-sdk-6.0 \
