@@ -34,6 +34,9 @@
 	// Wrap lines at the viewport width
 	"editor.wordWrap": "on",
 
+	// Don't select open files in the explorer
+	"explorer.autoReveal": false,
+
 	// Disable the Open Editors pane
 	"explorer.openEditors.visible": 0,
 
@@ -67,6 +70,10 @@
 
 	// Commit all unstaged changes when there are no staged changes
 	"git.enableSmartCommit": true,
+
+	// Disable telemetry for RedHat extensions
+	// https://github.com/redhat-developer/vscode-redhat-telemetry
+	"redhat.telemetry.enabled": false,
 
 	// Disable trusted windows
 	"security.workbench.trust.enabled": false,
