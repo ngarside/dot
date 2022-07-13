@@ -117,6 +117,7 @@ EOF
 sudo --login --user nathan bash << EOF
 	code --install-extension editorconfig.editorconfig
 	code --install-extension github.github-vscode-theme
+	code --install-extension ms-vscode.makefile-tools
 	code --install-extension PKief.material-icon-theme
 EOF
 
@@ -125,9 +126,6 @@ EOF
 sudo --login --user nathan bash << EOF
 	rm --force --recursive ~/.cache/dot
 	git clone --depth 1 https://github.com/ngarside/dot ~/.cache/dot
-	code --install-extension editorconfig.editorconfig
-	code --install-extension github.github-vscode-theme
-	code --install-extension PKief.material-icon-theme
 EOF
 
 # Copy dotfiles ------------------------------------------------------------------------------------
