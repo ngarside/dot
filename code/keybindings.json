@@ -1,0 +1,22 @@
+/*
+	Custom keybindings for Visual Studio Code
+	https://code.visualstudio.com
+*/
+
+[
+	// Cycle through tabs using 'ctrl+tab' and 'ctrl+shift+tab'
+	{ "key": "ctrl+tab", "command": "workbench.action.nextEditor" },
+	{ "key": "ctrl+shift+tab", "command": "workbench.action.previousEditor" },
+
+	// Duplicate the current line/selection with 'ctrl+d'
+	{ "key": "ctrl+d", "command": "-editor.action.addSelectionToNextFindMatch", "when": "editorFocus" },
+	{ "key": "ctrl+d", "command": "editor.action.duplicateSelection" },
+
+	// Remap 'save all' to 'ctrl+shift+s'
+	{ "key": "ctrl+k s", "command": "-saveAll" },
+	{ "key": "ctrl+shift+s", "command": "saveAll" },
+
+	// Remap 'open folder' to 'ctrl+shift+o'
+	{ "key": "ctrl+shift+o", "command": "workbench.action.files.openFolder", "when": "openFolderWorkspaceSupport" },
+	{ "key": "ctrl+k ctrl+o", "command": "-workbench.action.files.openFolder", "when": "openFolderWorkspaceSupport" }
+]
