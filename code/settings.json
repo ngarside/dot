@@ -4,6 +4,12 @@
 */
 
 {
+	// F# and YAML files should default to using spaces (everything else defaults to tabs)
+	"[fsharp,yaml]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 2
+	},
+
 	// Automatically close the console when the debug session ends
 	"debug.console.closeOnEnd": true,
 
@@ -106,6 +112,12 @@
 	// Use the material icon theme
 	// https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme
 	"workbench.iconTheme": "material-icon-theme",
+
+	// Remaps list/tree (file/folder) click behaviour:
+	// - Single click to select
+	// - Double click to open/expand
+	"workbench.list.openMode": "doubleClick",
+	"workbench.tree.expandMode": "doubleClick",
 
 	// Disable the welcome screen
 	"workbench.startupEditor": "none",
